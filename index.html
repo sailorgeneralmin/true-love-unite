@@ -13,27 +13,13 @@
 
 <!-- Removed invalid import statement. Use <script src="..."></script> for JS files. -->
 <style>
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 480px) {
 
-        @keyframes heartbeat {
 
-            0%,
-            20%,
-            40% {
-                transform: scale(1);
-            }
-
-            10%,
-            30%,
-            100% {
-                transform: scale(1.1);
-            }
-        }
-
-        body {
+        .body {
+            orientation: portrait;
             display: flex;
-            margin: 0;
-            position: absolute;
+
             align-items: center;
             justify-content: center;
             text-align: center;
@@ -43,6 +29,8 @@
             background-position: center;
             background-size: contain;
         }
+
+
 
         .header {
             display: block;
@@ -105,6 +93,24 @@
             /* transition: 5s ease in ease out; is invalid syntax */
         }
 
+        button {
+            font-weight: bolder;
+            background-color: black;
+            color: green;
+            font-size: medium;
+            text-decoration: none;
+            font-style: oblique;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: orange;
+            color: green;
+            font-size: large;
+            font-weight: bolder;
+            transition: 0.5s ease-in-out;
+        }
+
         /* Custom header classes, not HTML tags */
         .header2,
         .header3,
@@ -133,7 +139,7 @@
 </style>
 
 
-<body style=" justify-content: center; align-items: center; scroll-behavior: smooth; width: 94%;">
+<body style=" justify-content: center; align-items: center; scroll-behavior: smooth; width: 100%;">
 
     <div class="header"
         style="display:block; background-color: black; border-radius: 10%; justify-content: space-around; text-align:center;">
@@ -144,29 +150,66 @@
         </div>
 
         <div class="h1"
-            style="display:flex; margin-top: -55px;color:white; margin-left: 30%; font-weight:bolder; font-weight: 190px;">
+            style="display:flex; margin-top: -55px;color:white; margin-left: 20%; font-weight:bolder; font-weight: 190px;">
             🌴🍀 TRUE Love Unites
             🌴🍀
         </div>
 
         <div class="h2"
-            style="display: flex; font-weight: 20px;color:white; margin-left:30%; margin-top:30px; font-weight:bolder">
+            style="display: flex; font-weight:25px; color:white; margin-left: 22%; margin-top:30px; font-weight:bolder">
             Meet,Network, Hangout,Support
         </div>
         <ul class="navbar"
             style="display: inline-flex; gap: 55px; list-style-type: none; color: white; text-align:center; background-color:red;padding:5px; text-decoration:none; font-weight:bolder">
-            <li><a href="club-history.html"
-                    style="background-color:black;color:white; font-size:large; text-decoration:none; cursor:pointer; font-style:oblique;">CLUB-HISTORY</a>
-            </li>
-            <li><a href="mission.html"
-                    style="font-weight:bolder;background-color:black; color:white;font-size:large;text-decoration:none;font-style:oblique;font-weight:bolder;cursor:pointer;">MISSION</a>
-            </li>
-            <li><a href="admins.html"
-                    style="background-color:black; color:white; font-size:large;text-decoration:none;font-style:oblique;cursor:pointer;">ADMINS</a>
-            </li>
-            <li><a href="members.html"
-                    style="background-color:black; color:white; font-size:large;text-decoration:none;font-style:oblique; font-weight:bolder; cursor:pointer;">MEMBERS</a>
-            </li>
+
+            <button style=" font-weight: bolder;
+            background-color: black;
+            color: green;
+            font-size: medium;
+            text-decoration: none;
+            font-style: oblique;
+            cursor: pointer;">
+                <li><a href="club-history.html"
+                        style="background-color:black;color:white; font-size:large; text-decoration:none; cursor:pointer; font-style:oblique;">CLUB-HISTORY</a>
+                </li>
+            </button>
+
+
+            <button style=" font-weight: bolder;
+            background-color: black;
+            color: green;
+            font-size: medium;
+            text-decoration: none;
+            font-style: oblique;
+            cursor: pointer;">
+                <li><a href="mission.html"
+                        style="font-weight:bolder;background-color:black; color:white;font-size:large;text-decoration:none;font-style:oblique;font-weight:bolder;cursor:pointer;">MISSION</a>
+                </li>
+            </button>
+
+            <button style=" font-weight: bolder;
+            background-color: black;
+            color: green;
+            font-size: medium;
+            text-decoration: none;
+            font-style: oblique;
+            cursor: pointer;">
+                <li><a href="admins.html"
+                        style="background-color:black; color:white; font-size:large;text-decoration:none;font-style:oblique;cursor:pointer;">ADMINS</a>
+                </li>
+            </button>
+
+            <button style=" font-weight: bolder;
+            background-color: black;
+            color: green;
+            font-size: medium;
+            text-decoration: none;
+            font-style: oblique;
+            cursor: pointer;">
+                <li><a href="members.html"
+                        style="background-color:black; color:white; font-size:large;text-decoration:none;font-style:oblique; font-weight:bolder; cursor:pointer;">MEMBERS</a>
+                </li>
+            </button>
         </ul>
     </div>
 
@@ -193,10 +236,10 @@
             <img src="images/true love unite grp/tf fl.jpg" alt="flyer" height="500" width="670">
             <ul>
                 <li>Event postponed till further notice due to committee incompetence</li>
-                <li>Date will be communicated later</li>
+                <li>Date will be communicated soon</li>
             </ul>
         </div>
-        <li>Date will be communicated </ul>
+        <li>Date will be communicated soon</li>
     </div>
 
     <div class="header4">
