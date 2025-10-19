@@ -1,3 +1,114 @@
-body{
-    background-color: orange;
-}
+ @media only screen and (max-width: 600px) {
+     @keyframes heartbeat {
+
+         0%,
+         20%,
+         40% {
+             transform: scale(1);
+         }
+
+         10%,
+         30%,
+         100% {
+             transform: scale(1.2);
+         }
+     }
+
+     body {
+         display: flex;
+         margin: 0;
+         justify-content: center;
+         text-align: center;
+         width: 100%;
+         background-color: orange;
+         /* text-wrap and flex-wrap are not valid for body */
+         background-position: center;
+         background-size: contain;
+     }
+
+     .header {
+         display: block;
+         text-align: center;
+         margin: 0;
+         background-color: black;
+         width: auto;
+         /* flex-shrink is not valid for block elements */
+     }
+
+     .image {
+         display: flex;
+         height: 80px;
+         width: 90px;
+         border-radius: 40%;
+         animation: heartbeat 2s linear infinite;
+     }
+
+     .h1 {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+         margin-top: -12px;
+         text-align: center;
+         width: 100%;
+         font-size: 180%;
+         font-weight: bolder;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         color: white;
+     }
+
+     .h2 {
+         display: flex;
+         margin-left: 9%;
+         font-size: larger;
+         text-align: center;
+         font-size: 109%;
+         font-weight: bolder;
+         justify-content: center;
+         align-items: center;
+         color: orangered;
+     }
+
+     .navbar {
+         display: inline-flex;
+         color: gold;
+         background-color: orange;
+         border-radius: 50%;
+         list-style-type: none;
+         width: 90%;
+         text-align: center;
+         /* pointer-events: visibleFill 15px; is invalid */
+         filter: drop-shadow(2px 2px 2px gray);
+         justify-content: center;
+         gap: 5%;
+         padding: 15px;
+         cursor: pointer;
+         align-content: space-evenly;
+         /* transition: 5s ease in ease out; is invalid syntax */
+     }
+
+     /* Custom header classes, not HTML tags */
+     .header2,
+     .header3,
+     .header4 {
+         display: flex;
+         border-width: 8px;
+         justify-content: center;
+         background-color: orange;
+         border-radius: 20%;
+         height: 500px;
+         border-style: solid;
+         margin: 0;
+         text-align: center;
+         position: relative;
+         scroll-behavior: smooth;
+         direction: ltr;
+     }
+
+     .footer {
+         display: flex;
+         margin: auto;
+         margin-top: 65%;
+         border-radius: 50%;
+     }
+ }
