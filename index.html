@@ -13,20 +13,18 @@
 
 <!-- Removed invalid import statement. Use <script src="..."></script> for JS files. -->
 <style>
-    @media only screen and (max-width: 480px) {
+    @media only screen and (max-width: 320px) {
 
 
         .body {
-            orientation: portrait;
             display: flex;
+            margin: 10%;
 
             align-items: center;
             justify-content: center;
             text-align: center;
             width: 100%;
             background-color: orange;
-            /* text-wrap and flex-wrap are not valid for body */
-            background-position: center;
             background-size: contain;
         }
 
@@ -41,8 +39,10 @@
             /* flex-shrink is not valid for block elements */
         }
 
-        .image {
-            display: flex;
+        image {
+            display: block;
+            margin-left: 10%;
+            margin: 1;
             height: 80px;
             width: 90px;
             border-radius: 40%;
@@ -77,8 +77,8 @@
 
         .navbar {
             display: inline-flex;
-            color: gold;
-            background-color: orange;
+            color: white;
+            background-color: white;
             border-radius: 50%;
             list-style-type: none;
             width: 90%;
@@ -145,7 +145,7 @@
         style="display:block; background-color: black; border-radius: 10%; justify-content: space-around; text-align:center;">
 
         <div class="image"
-            style="border-radius: 5%; display: flex; border-color: chocolate; animation: heartbeat 6s linear infinite ">
+            style="border-radius: 5%; display: flex; margin-left:12px; border-color: chocolate; animation: heartbeat 6s linear infinite ">
             <img src="images/true love unite grp/true love logo 1.jpg" alt="club-logo" height="80" width="80">
         </div>
 
@@ -163,51 +163,51 @@
             style="display: inline-flex; gap: 55px; list-style-type: none; color: white; text-align:center; background-color:red;padding:5px; text-decoration:none; font-weight:bolder">
 
             <button style=" font-weight: bolder;
-            background-color: black;
+            background-color: green;
             color: green;
             font-size: medium;
             text-decoration: none;
             font-style: oblique;
             cursor: pointer;">
                 <li><a href="club-history.html"
-                        style="background-color:black;color:white; font-size:large; text-decoration:none; cursor:pointer; font-style:oblique;">CLUB-HISTORY</a>
+                        style="background-color:green; color:white; font-size:large; text-decoration:none; cursor:pointer; font-style:oblique;">CLUB-HISTORY</a>
                 </li>
             </button>
 
 
             <button style=" font-weight: bolder;
-            background-color: black;
+            background-color: green;
             color: green;
             font-size: medium;
             text-decoration: none;
             font-style: oblique;
             cursor: pointer;">
                 <li><a href="mission.html"
-                        style="font-weight:bolder;background-color:black; color:white;font-size:large;text-decoration:none;font-style:oblique;font-weight:bolder;cursor:pointer;">MISSION</a>
+                        style="font-weight:bolder;background-color:green; color:white;font-size:large;text-decoration:none;font-style:oblique;font-weight:bolder;cursor:pointer;">MISSION</a>
                 </li>
             </button>
 
             <button style=" font-weight: bolder;
-            background-color: black;
+            background-color: green;
             color: green;
             font-size: medium;
             text-decoration: none;
             font-style: oblique;
             cursor: pointer;">
                 <li><a href="admins.html"
-                        style="background-color:black; color:white; font-size:large;text-decoration:none;font-style:oblique;cursor:pointer;">ADMINS</a>
+                        style="background-color:green; color:white; font-size:large;text-decoration:none;font-style:oblique;cursor:pointer;">ADMINS</a>
                 </li>
             </button>
 
             <button style=" font-weight: bolder;
-            background-color: black;
+            background-color: green;
             color: green;
             font-size: medium;
             text-decoration: none;
             font-style: oblique;
             cursor: pointer;">
                 <li><a href="members.html"
-                        style="background-color:black; color:white; font-size:large;text-decoration:none;font-style:oblique; font-weight:bolder; cursor:pointer;">MEMBERS</a>
+                        style="background-color:green; color:white; font-size:large;text-decoration:none;font-style:oblique; font-weight:bolder; cursor:pointer;">MEMBERS</a>
                 </li>
             </button>
         </ul>
