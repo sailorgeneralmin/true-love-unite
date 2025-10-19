@@ -1,5 +1,4 @@
 <!doctype html>
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,97 +8,102 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@vercel/analytics/dist/analytics.min.js"></script>
-    <!-- Removed invalid import statement. Use <script src="..."></script> for JS files. -->
-    <style>
-        @media only screen and (max-width: 600px) {
-            @keyframes heartbeat {
 
-                0%,
-                20%,
-                40% {
+    <script type="module">
+        import { Analytics } from '@vercel/analytics';
+        Analytics.init();
+
+        <!-- Removed invalid import statement. Use <script src="..."></script> for JS files. -->
+        <style>
+            @media only screen and (max-width: 600px) {
+                
+                @keyframes heartbeat {
+
+                0 %,
+                20 %,
+                40 % {
                     transform: scale(1);
                 }
 
                 10%,
-                30%,
-                100% {
-                    transform: scale(1.1);
+            30%,
+            100% {
+                transform: scale(1.1);
                 }
             }
 
             body {
                 display: flex;
-                margin: 0;
-                position: absolute;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                width: 100%;
-                background-color: orange;
-                /* text-wrap and flex-wrap are not valid for body */
-                background-position: center;
-                background-size: contain;
+            margin: 0;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            background-color: orange;
+            /* text-wrap and flex-wrap are not valid for body */
+            background-position: center;
+            background-size: contain;
             }
 
             .header {
                 display: block;
-                text-align: center;
-                margin: 0;
-                background-color: black;
-                width: auto;
+            text-align: center;
+            margin: 0;
+            background-color: black;
+            width: auto;
                 /* flex-shrink is not valid for block elements */
             }
 
             .image {
                 display: flex;
-                height: 80px;
-                width: 90px;
-                border-radius: 40%;
-                animation: heartbeat 2s linear infinite;
+            height: 80px;
+            width: 90px;
+            border-radius: 40%;
+            animation: heartbeat 2s linear infinite;
             }
 
             .h1 {
                 display: flex;
-                align-items: center;
-                justify-content: center;
+            align-items: center;
+            justify-content: center;
 
-                margin-top: -12px;
-                text-align: center;
-                width: 100%;
-                font-size: 180%;
-                font-weight: bolder;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                color: white;
+            margin-top: -12px;
+            text-align: center;
+            width: 100%;
+            font-size: 180%;
+            font-weight: bolder;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
             }
 
             .h2 {
                 display: flex;
-                margin-left: 9%;
-                font-size: larger;
-                text-align: center;
-                font-size: 109%;
-                font-weight: bolder;
-                justify-content: center;
-                align-items: center;
-                color: orangered;
+            margin-left: 9%;
+            font-size: larger;
+            text-align: center;
+            font-size: 109%;
+            font-weight: bolder;
+            justify-content: center;
+            align-items: center;
+            color: orangered;
             }
 
             .navbar {
                 display: inline-flex;
-                color: gold;
-                background-color: orange;
-                border-radius: 50%;
-                list-style-type: none;
-                width: 90%;
-                text-align: center;
-                /* pointer-events: visibleFill 15px; is invalid */
-                filter: drop-shadow(2px 2px 2px gray);
-                justify-content: center;
-                gap: 5%;
-                padding: 15px;
-                cursor: pointer;
-                align-content: space-evenly;
+            color: gold;
+            background-color: orange;
+            border-radius: 50%;
+            list-style-type: none;
+            width: 90%;
+            text-align: center;
+            /* pointer-events: visibleFill 15px; is invalid */
+            filter: drop-shadow(2px 2px 2px gray);
+            justify-content: center;
+            gap: 5%;
+            padding: 15px;
+            cursor: pointer;
+            align-content: space-evenly;
                 /* transition: 5s ease in ease out; is invalid syntax */
             }
 
@@ -108,111 +112,112 @@
             .header3,
             .header4 {
                 display: flex;
-                border-width: 8px;
-                justify-content: center;
-                background-color: orange;
-                border-radius: 20%;
-                height: 500px;
-                border-style: solid;
-                margin: 0;
-                text-align: center;
-                position: relative;
-                scroll-behavior: smooth;
-                direction: ltr;
+            border-width: 8px;
+            justify-content: center;
+            background-color: orange;
+            border-radius: 20%;
+            height: 500px;
+            border-style: solid;
+            margin: 0;
+            text-align: center;
+            position: relative;
+            scroll-behavior: smooth;
+            direction: ltr;
             }
 
             .footer {
                 display: flex;
-                margin: auto;
-                margin-top: 65%;
-                border-radius: 50%;
+            margin: auto;
+            margin-top: 65%;
+            border-radius: 50%;
             }
         }
-    </style>
-</head>
+        </style>
+</head >
 
-<body style=" justify-content: center; align-items: center; scroll-behavior: smooth; width: 94%;">
+            <body style=" justify-content: center; align-items: center; scroll-behavior: smooth; width: 94%;">
 
-    <div class="header"
-        style="display:block; background-color: black; border-radius: 10%; justify-content: space-around; text-align:center;">
+                <div class="header"
+                    style="display:block; background-color: black; border-radius: 10%; justify-content: space-around; text-align:center;">
 
-        <div class="image"
-            style="border-radius: 5%; display: flex; border-color: chocolate; animation: heartbeat 6s linear infinite ">
-            <img src="images/true love unite grp/true love logo 1.jpg" alt="club-logo" height="80" width="80">
-        </div>
+                    <div class="image"
+                        style="border-radius: 5%; display: flex; border-color: chocolate; animation: heartbeat 6s linear infinite ">
+                        <img src="images/true love unite grp/true love logo 1.jpg" alt="club-logo" height="80" width="80">
+                    </div>
 
-        <div class="h1"
-            style="display:flex; margin-top: -55px;color:white; margin-left: 30%; font-weight:bolder; font-weight: 190px;">
-            🌴🍀 TRUE Love Unites
-            🌴🍀
-        </div>
+                    <div class="h1"
+                        style="display:flex; margin-top: -55px;color:white; margin-left: 30%; font-weight:bolder; font-weight: 190px;">
+                        🌴🍀 TRUE Love Unites
+                        🌴🍀
+                    </div>
 
-        <div class="h2"
-            style="display: flex; font-weight: 20px;color:white; margin-left:30%; margin-top:30px; font-weight:bolder">
-            Meet,Network, Hangout,Support
-        </div>
-        <ul class="navbar"
-            style="display: inline-flex; gap: 55px; list-style-type: none; color: white; text-align:center; background-color:red;padding:5px; text-decoration:none; font-weight:bolder">
-            <li><a href="club-history.html"
-                    style="background-color:black;color:white; font-size:large; text-decoration:none; cursor:pointer; font-style:oblique;">CLUB-HISTORY</a>
-            </li>
-            <li><a href="mission.html"
-                    style="font-weight:bolder;background-color:black; color:white;font-size:large;text-decoration:none;font-style:oblique;font-weight:bolder;cursor:pointer;">MISSION</a>
-            </li>
-            <li><a href="admins.html"
-                    style="background-color:black; color:white; font-size:large;text-decoration:none;font-style:oblique;cursor:pointer;">ADMINS</a>
-            </li>
-            <li><a href="members.html"
-                    style="background-color:black; color:white; font-size:large;text-decoration:none;font-style:oblique; font-weight:bolder; cursor:pointer;">MEMBERS</a>
-            </li>
-        </ul>
-    </div>
+                    <div class="h2"
+                        style="display: flex; font-weight: 20px;color:white; margin-left:30%; margin-top:30px; font-weight:bolder">
+                        Meet,Network, Hangout,Support
+                    </div>
+                    <ul class="navbar"
+                        style="display: inline-flex; gap: 55px; list-style-type: none; color: white; text-align:center; background-color:red;padding:5px; text-decoration:none; font-weight:bolder">
+                        <li><a href="club-history.html"
+                            style="background-color:black;color:white; font-size:large; text-decoration:none; cursor:pointer; font-style:oblique;">CLUB-HISTORY</a>
+                        </li>
+                        <li><a href="mission.html"
+                            style="font-weight:bolder;background-color:black; color:white;font-size:large;text-decoration:none;font-style:oblique;font-weight:bolder;cursor:pointer;">MISSION</a>
+                        </li>
+                        <li><a href="admins.html"
+                            style="background-color:black; color:white; font-size:large;text-decoration:none;font-style:oblique;cursor:pointer;">ADMINS</a>
+                        </li>
+                        <li><a href="members.html"
+                            style="background-color:black; color:white; font-size:large;text-decoration:none;font-style:oblique; font-weight:bolder; cursor:pointer;">MEMBERS</a>
+                        </li>
+                    </ul>
+                </div>
 
-    <div
-        style="display: flex; color: orange; font-size: large; background-color: black; width: 100%; font-style: italic; font-weight: bolder; text-align: center; justify-content: center; padding: 1%; position: sticky;">
-        <marquee style="scroll-behavior: smooth; direction: ltr; color: orangered; font-size: 180%; margin-top: 15px;">
-            Welcome to True Love Unite 💖, a community where respect 🤝, trust 🛡, and collaboration 🤍 are at the heart
-            of everything we do. Our mission is to foster deep connections 💬, provide mutual support 🌱, and inspire
-            growth ✨ in all aspects of life. We encourage open communication 🗣, active participation 🚀, and a spirit
-            of unity 🤲. As a team of admins, we are committed to ensuring that each member feels valued 💫 and heard
-            👂. Together, we strive to create a positive, engaging environment 🌟 that uplifts everyone.
-        </marquee>
-    </div>
+                <div
+                    style="display: flex; color: orange; font-size: large; background-color: black; width: 100%; font-style: italic; font-weight: bolder; text-align: center; justify-content: center; padding: 1%; position: sticky;">
+                    <marquee style="scroll-behavior: smooth; direction: ltr; color: orangered; font-size: 180%; margin-top: 15px;">
+                        Welcome to True Love Unite 💖, a community where respect 🤝, trust 🛡, and collaboration 🤍 are at the heart
+                        of everything we do. Our mission is to foster deep connections 💬, provide mutual support 🌱, and inspire
+                        growth ✨ in all aspects of life. We encourage open communication 🗣, active participation 🚀, and a spirit
+                        of unity 🤲. As a team of admins, we are committed to ensuring that each member feels valued 💫 and heard
+                        👂. Together, we strive to create a positive, engaging environment 🌟 that uplifts everyone.
+                    </marquee>
+                </div>
 
-    <div class="header2">
-        <img src="images/true love unite grp/mark your register today TLU.jpg" alt="flyer" height="500" width="670">
-        <p
-            style="font-size: 150%; color: orange; background-color: black; padding-block: 5px; filter: drop-shadow(8px 8px 8px gray);">
-            True Love Unites is a space for meaningful connections 💖, respect ✨, and support 🤝. Together, we foster
-            unity 🤍, encourage growth 🌱, and create a positive environment for all members. Let’s build lasting
-            relationships through open communication 🗣 and trust 🛡.
-        </p>
-        <div class="header3">
-            <img src="images/true love unite grp/tf fl.jpg" alt="flyer" height="500" width="670">
-            <ul>
-                <li>Event postponed till further notice due to committee incompetence</li>
-                <li>Date will be communicated later</li>
-            </ul>
-        </div>
-        <li>Date will be communicated </ul>
-    </div>
+                <div class="header2">
+                    <img src="images/true love unite grp/mark your register today TLU.jpg" alt="flyer" height="500" width="670">
+                        <p
+                            style="font-size: 150%; color: orange; background-color: black; padding-block: 5px; filter: drop-shadow(8px 8px 8px gray);">
+                            True Love Unites is a space for meaningful connections 💖, respect ✨, and support 🤝. Together, we foster
+                            unity 🤍, encourage growth 🌱, and create a positive environment for all members. Let’s build lasting
+                            relationships through open communication 🗣 and trust 🛡.
+                        </p>
+                        <div class="header3">
+                            <img src="images/true love unite grp/tf fl.jpg" alt="flyer" height="500" width="670">
+                                <ul>
+                                    <li>Event postponed till further notice due to committee incompetence</li>
+                                    <li>Date will be communicated later</li>
+                                </ul>
+                        </div>
+                        <li>Date will be communicated </ul>
+                </div>
 
-    <div class="header4">
-        <img src="images/true love unite grp/true love logo 2.jpg" alt="flyer" height="500" width="670">
-    </div>
+                <div class="header4">
+                    <img src="images/true love unite grp/true love logo 2.jpg" alt="flyer" height="500" width="670">
+                </div>
 
-    <footer
-        style="display: flex; background-color: black; padding: 10px; justify-content: space-between; gap: 10px; margin-bottom: 15px; width: 100%;">
-        <p
-            style="color: white; font-family: 'Times New Roman', Times, serif; font-size: 40px; padding: 10px; text-align: center; text-shadow: 1px 1px 5px #333;">
-            For<br>sponsorship and advert<br>contact us at<br>Tloveunites@gmail.com
-        </p>
-        <img src="images/true love unite grp/copyright 2.png" alt="img1" height="70" width="60">
-        <img src="images/true love unite grp/socialism 2.jpeg" alt="img2" height="70" width="60">
-        <img src="images/true love unite grp/cac affairs.jpeg" alt="img3" height="70" width="60">
-        <p style="color: white; background-color: black; padding: 1px; width: 6%; font-size: large;">V1.0</p>
+                <footer
+                    style="display: flex; background-color: black; padding: 10px; justify-content: space-between; gap: 10px; margin-bottom: 15px; width: 100%;">
+                    <p
+                        style="color: white; font-family: 'Times New Roman', Times, serif; font-size: 40px; padding: 10px; text-align: center; text-shadow: 1px 1px 5px #333;">
+                        For<br>sponsorship and advert<br>contact us at<br>Tloveunites@gmail.com
+                        </p>
+                            <img src="images/true love unite grp/copyright 2.png" alt="img1" height="70" width="60">
+                                <img src="images/true love unite grp/socialism 2.jpeg" alt="img2" height="70" width="60">
+                                    <img src="images/true love unite grp/cac affairs.jpeg" alt="img3" height="70" width="60">
+                                        <p style="color: white; background-color: black; padding: 1px; width: 6%; font-size: large;">V1.0</p>
 
-        <script src="script.js"></script>
+                                        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@vercel/analytics/dist/analytics.min.js"></script>
     </footer>
 </body>
 
